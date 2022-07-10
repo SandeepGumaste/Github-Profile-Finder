@@ -5,10 +5,7 @@ import Spinner from "../components/layout/Spinner";
 import GithubContext from "../context/github/GithubContext";
 import { useParams } from "react-router-dom";
 import RepoList from "../components/repos/ReposList";
-import {
-  getUserData,
-  getUserAndReposData,
-} from "../context/github/GithubActions";
+import { getUserAndReposData } from "../context/github/GithubActions";
 
 const User = () => {
   const { repos, user, isLoading, dispatch } = useContext(GithubContext);
